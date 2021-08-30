@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de memes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/72aa93aa1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- CABECERA -->        
+        <main class="main">
+            <header class="header" id="header">
+                <div class="header_title">Generador de memes</div>
+                    <ul class="header_menu">
+                        <li><i class="far fa-file-image" class="imagen_menu"></i>Imagen</li>
+                        <li><i class="fas fa-font" class="texto_menu"></i>Texto</li>
+                        <li><i class="fas fa-lightbulb"class="modo_oscuro_menu"></i>Modo Oscuro</li>
+                    </ul>
+            </header>
+
+            <!-- VISOR MEME -->
+            
+            <div class="box" id="box">
+                <div class="top_text"><h2>top text</h2></div>
+                <div class="box_meme"></div>
+                
+                <div class="box_download">
+                    <p>Descargar meme</p>
+                   
+                </div>
+                <div class="bottom_text"><h2>bottom text</h2></div>
+            </div>
+            <div class="meme">
+                <button class="btnmeme"><i class="fas fa-download" class="btnmeme" >Descargar Meme</button></i>
+                
+            </div>
+        </main>
+
+        <!-- ASIDE -->
+        <aside id="aside" class="aside">
+
+
+            
+            <div class="imagen">
+                <h3>Imagen</h3>
+                <h4>url</h4>
+                <input type="text" name="url" id="url">
+                <h4>Color</h4>
+                <div class="color">
+                    <input type="submit" value="#ffffff" name="color" id="color">
+                    <select name="effect" id="effect">
+                        <option value="ninguno">Ninguno</option>
+                        <option value="aclara">Aclarar</option>
+                        <option value="oscurecer">Oscurecer</option>
+                        <option value="diferencia">Diferencia</option>
+                        <option value="luminosidad">Luminosidad</option>
+                        <option value="multiplicar">Multiplicar</option>
+                    </select>
+                </div>
+                    <h4>Filtros</h4>
+                    <form class="filtros">
+                    
+                        <label for="brillo">brillo</label>
+                        <input type="range" name="brillo" id="brillo" min="0" max="100" value="0">
+                        <label for="opacidad">opacidad</label>
+                        <input type="range" name="opacidad" id="opacidad" min="0" max="100" value="0">
+                        <label for="contraste">contraste</label>
+                        <input type="range" name="contraste" id="contraste" min="0" max="100" value="0" >
+                        <label for="desenfoque">desenfoque</label>
+                        <input type="range" name="desenfoque" id="desenfoque" min="0" max="100" value="0">
+                        <label for="escala de grises">Escala de grises</label>
+                        <input type="range" name="grises" id="grises" min="0" max="100" value="0">
+                        <label for="sepia">sepia</label>
+                        <input type="range" name="sepia" id="sepia" min="0" max="100" value="0">
+                        <label for="hue">hue</label>
+                        <input type="range" name="hue" id="hue" min="0" max="100" value="0">
+                        <label for="saturado">saturado</label>
+                        <input type="range" name="saturado" id="saturado" min="0" max="100" value="0">
+                        <label for="negativo">negativo</label>
+                        <input type="range" name="negativo" id="negativo" min="0" max="100" value="0">
+                        <input type="reset" value="Restablecer filtros" id="restablecer">
+                    </form>
+            </div>
+
+
+
+                <div class="texto">
+                    <h3>texto</h3>
+                    <h4>superior</h4>
+                    <input type="text" name="top-text" id="top-text">
+                    <div class="txt-check">
+                        <input type="checkbox" name="top" id="top">
+                        <p>Sin texto superior</p>
+                    </div>
+                    <h4>Inferior</h4>
+                    <input type="text" name="bot-text" id="bot-text">
+                    <div class="txt-check">
+                        <input type="checkbox" name="bot" id="bot">
+                        <p>Sin texto inferior</p>
+                    </div>
+                    <h4>fuente</h4>
+                    <select name="font-family" id="font-family" aria-label="font-family">
+                        <option value="arial">Arial</option>
+                        <option value="arial-black">Arial Black</option>
+                        <option value="american-typewriter">American Typewriter</option>
+                        <option value="andale-mono">Andale Mono</option>
+                        <option value="comic-sans-ms">Comic-Sans MS</option>
+                        <option value="helvetica">Helvetica</option>
+                        <option value="impact">Impact</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="times-new-roman">Times New Roman</option>
+                    </select>
+                    <div class="size">
+                        <div class="size_txt"></div>
+                        <div class="size_left"></div>
+                        <div class="size_center"></div>
+                        <div class="size_right"></div>
+                    </div>
+                    <div class="color">
+                        <div class="color-txt">
+                            <h4>color</h4>
+                            <input type="color" name="color-txt" id="color-txt">
+                        </div>
+                        <div class="color-bg">
+                            <h4>fondo</h4>
+                            <input type="color" name="color-bg" id="color-bg">
+                        </div>
+                    </div>
+                    <div class="txt-check">
+                        <input type="checkbox" name="bot" id="bot">
+                        <p>fondo transparente</p>
+                    </div>
+                    <h4>contorno</h4>
+                    <div class="contorno">
+                        <div class="contorno_">Ninguno</div>
+                        <div class="contorno_">Claro</div>
+                        <div class="contorno_">Oscuro</div>
+                    </div>
+                    <h4>espaciado</h4>
+                    <div class="espaciado"></div>
+                    <h4>interlineado</h4>
+                    <select name="interlineado" id="interlineado" aria-label="interlineado">
+                        <option value="0.8">0.8</option>
+                        <option value="1.2">1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2.5</option>
+                    </select>
+                    
+                </div>
+        </aside>    
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
