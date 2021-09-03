@@ -5,10 +5,27 @@
     list-style-type: none;
 }
 
-.container {
+#cuerpo{
+background-color: yellowgreen;
+color: tomato;
+}
+
+.container{
     display: flex;
     background-color: teal;
+    color: black;
+
 }
+/*funcion para claro oscuro*/
+
+.oscuro{
+    background-color: gray;
+    color:  white;
+}
+
+
+
+
 
 /* -- CABECERA -- */
 
