@@ -8,17 +8,26 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/72aa93aa1b.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="container">
+<body id="cuerpo" class= " claro oscuro">
+    <div id="fondo" class="container oscuro">
         
         <!-- CABECERA -->        
         <main class="main">
             <header class="header" id="header">
                 <div class="header_title">Generador de memes</div>
                     <ul class="header_menu">
-                        <li><i class="far fa-file-image" class="imagen_menu"></i>Imagen</li>
-                        <li><i class="fas fa-font" class="texto_menu"></i>Texto</li>
-                        <li><i class="fas fa-lightbulb"class="modo_oscuro_menu"></i>Modo Oscuro</li>
+                        <li>
+                            <button class="img-menu">
+                                <i class="far fa-file-image" class="imagen_menu"></i>Imagen</li>
+                            </button>
+                        <li>
+                            <button class="text">
+                                <i class="fas fa-font" class="texto_menu"></i>Texto</li>
+                            </button>
+                        <li> <button  class= "dark-mode" onclick="modoOscuro()">
+                            <i class="fas fa-lightbulb" class="modo_oscuro_menu"></i>Modo Oscuro</li>
+                        </button>
+                            
                     </ul>
             </header>
 
@@ -41,7 +50,7 @@
         </main>
 
         <!-- ASIDE -->
-        <aside id="aside" class="aside">
+        <aside id="aside" class="aside oscuro">
 
 
             
