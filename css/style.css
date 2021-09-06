@@ -8,11 +8,10 @@
 
 .container{
     display: flex;
-    background-color: teal;
     color: black;
 
 }
-/*funcion para claro oscuro*/
+/*funcion para claro oscuro
 
 
 
@@ -47,7 +46,7 @@
 
 
 
-.img-menu, .text , .dark-mode{
+.img-menu, .text , #bdark{
     margin: 0 1em;
     padding:0.4em 1em; 
     background-color: aquamarine;
@@ -55,7 +54,7 @@
   
       
 }
-.img-menu:hover , .text:hover , .dark-mode:hover{
+.img-menu:hover , .text:hover , #bdark:hover{
     margin: 0 1em;
     background-color:rgba(52, 52, 117); 
     color:white;
@@ -182,3 +181,16 @@
     display: flex;
 }
 
+
+ body.darkmode{
+     background-color: rgb(48, 52, 63);
+     color:white;
+ }
+header.darkmode{
+    background-color: rgb(25, 30, 43);
+    color: white;
+}
+aside.darkmode{
+    background-color: rgb(37, 41, 53);
+    color: white;
+}
