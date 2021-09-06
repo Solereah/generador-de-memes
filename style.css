@@ -56,18 +56,20 @@ color: tomato;
 
 .img-menu, .text , .dark-mode{
     margin: 0 1em;
-    border-style: none;
+    padding:0.4em 1em; 
     background-color: aquamarine;
     color:white;
-    
-    
+    border-style: none;
+  
+      
 }
 .img-menu:hover , .text:hover , .dark-mode:hover{
-    cursor: pointer;
+    margin: 0 1em;
     background-color:rgba(52, 52, 117); 
     border-style: 1px solid rgb(11, 11, 36);
     border-radius: 0.4em; 
-    padding:0.4em 1em; 
+    cursor: pointer;
+
     
  
 }
