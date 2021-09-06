@@ -20,7 +20,7 @@ color: tomato;
 
 .oscuro{
     background-color: gray;
-    color:  white;
+    color:white;
 }
 
 
@@ -43,12 +43,33 @@ color: tomato;
 }
 
 .header_title {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .header_menu {
     display: flex;
     padding: 1em;
+    
+}
+
+
+
+.img-menu, .text , .dark-mode{
+    margin: 0 1em;
+    border-style: none;
+    background-color: aquamarine;
+    color:white;
+    
+    
+}
+.img-menu:hover , .text:hover , .dark-mode:hover{
+    cursor: pointer;
+    background-color:rgba(52, 52, 117); 
+    border-style: 1px solid rgb(11, 11, 36);
+    border-radius: 0.4em; 
+    padding:0.4em 1em; 
+    
+ 
 }
 
 .box {
@@ -67,6 +88,7 @@ color: tomato;
     text-transform: uppercase;
     padding:1em;
     background-color: white;
+    color:rgb(14, 14, 36); 
     
 }
 
@@ -87,9 +109,21 @@ color: tomato;
 .btnmeme{
     padding:1em;
     margin-top: 2em;
-    align-items: center;
-    width: 20%;
+    align-items:center;
+    width: 15%;
     font-size: 1em;
+    color:white;
+    background-color: rgb(10, 10, 44);
+    border:none;
+    border-radius: 0.3em;
+
+
+}    
+
+
+.btnmeme:hover{
+    cursor: pointer;
+    background-color: rgba(52, 52, 117, 0.7)
     
 
 
