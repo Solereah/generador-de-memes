@@ -9,6 +9,7 @@
 .container{
     display: flex;
     color: black;
+  
 
 }
 /*funcion para claro oscuro
@@ -51,9 +52,9 @@
     padding:0.4em 1em; 
     background-color: aquamarine;
     border-style: none;
-  
-      
+     
 }
+
 .img-menu:hover , .text:hover , #bdark:hover{
     margin: 0 1em;
     background-color:rgba(52, 52, 117); 
@@ -92,8 +93,6 @@
 
     
     
-
-
 
 .meme{
     display: flex;
@@ -181,16 +180,26 @@
     display: flex;
 }
 
+/*------ Cambio de color para modo oscuro------------- */
 
  body.darkmode{
      background-color: rgb(48, 52, 63);
      color:white;
  }
+ 
 header.darkmode{
     background-color: rgb(25, 30, 43);
     color: white;
 }
+
 aside.darkmode{
     background-color: rgb(37, 41, 53);
     color: white;
 }
+
+
+/*
+.img-menu, .text , #bdark{
+    background-color: rgb(25, 30, 43);
+    color: white;
+}*/
