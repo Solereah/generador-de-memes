@@ -17,19 +17,17 @@
                 <div class="header_title">Generador de memes</div>
                     <div class="header_menu">
                         
-                            <button class="img-menu">
+                            <button class="img-menu" id="btn-img">
                             <i class="far fa-file-image" class="imagen_menu dark_btn"></i>Imagen
                             </button>
                         
-                            <button class="text">
+                            <button class="text" id="btn-text">
                                 <i class="fas fa-font" class="texto_menu dark_btn"></i>Texto
                             </button>
                          <button  id= "bdark">
                             <i class="fas fa-lightbulb" class="modo_oscuro_menu  dark_btn"></i>Modo Oscuro</li>
                         </button>
-                     </div>
-                            
-                    
+                     </div>      
             </header>
 
             <!-- VISOR MEME -->
@@ -51,11 +49,11 @@
         </main>
 
         <!-- ASIDE -->
-        <aside class="aside darkmode">
+        <aside class="aside darkmode panel">
 
-
-            
-            <div class="imagen">
+            <!-- SECTION IMAGE-->
+           <section class="imagen panel-img">
+            <!--<div class="imagen" id="panel-img"></div>-->
                 <h3>Imagen</h3>
                 <h4>url</h4>
                 <input type="text" name="url" id="url">
@@ -94,11 +92,11 @@
                         <input type="range" name="negativo" id="negativo" min="0" max="100" value="0">
                         <input type="reset" value="Restablecer filtros" id="restablecer">
                     </form>
-            </div>
+                </section>
 
-
-
-                <div class="texto">
+                <!-- SECTION TEXT-->
+                <section class="texto panel-text">
+                    <!--<div class="texto" id="panel-text"></div> --> 
                     <h3>texto</h3>
                     <h4>superior</h4>
                     <input type="text" name="top-text" id="top-text">
@@ -161,7 +159,7 @@
                         <option value="2.5">2.5</option>
                     </select>
                     
-                </div>
+                </section>
         </aside>   
     </div>
     <script src="java.js"></script>
