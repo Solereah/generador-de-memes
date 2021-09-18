@@ -1,33 +1,19 @@
-/*function modoOscuro(){
+'use strict'
 
-    let elemento = document.getElementById('fondo')
- 
-    
-    if(elemento.classList.contains('oscuro')){
-        elemento.classList.remove('oscuro')
-    }
-    else{
-        elemento.classList.add('oscuro')
-    }
-}*/
-  /*
-function modoOscuro() {
-    let element = document.getElementById("cuerpo");
-    element.classList.toggle("oscuro");
+//Cambio de modo claro a oscuro
 
-}
-*/
-/*function modoAside(){
-  
-    let elemento2 = document.getElementById('aside')
- 
-    
-    if(elemento2.classList.contains('oscuro')){
-        elemento2.classList.remove('oscuro')
-    }
+const bdark = document.querySelector('#bdark')
+const darkBody = document.querySelector('body')
+const darkHeader = document.querySelector('header')
+const darkAside = document.querySelector('aside')
 
-    else{
-        elemento2.classList.add('oscuro')
-    }
-    }
-*/
+
+//Solucionar problemas con los buttons del header porque no cambian de color en modo oscuro
+bdark.addEventListener('click', e =>{
+    darkBody.classList.toggle('darkmode')
+    darkHeader.classList.toggle('darkmode')
+    darkAside.classList.toggle('darkmode')
+
+
+})
+

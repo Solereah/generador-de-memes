@@ -5,23 +5,16 @@
     list-style-type: none;
 }
 
-#cuerpo{
-background-color: yellowgreen;
-color: tomato;
-}
 
 .container{
     display: flex;
-    background-color: teal;
     color: black;
+  
 
 }
-/*funcion para claro oscuro*/
+/*funcion para claro oscuro
 
-.oscuro{
-    background-color: gray;
-    color:white;
-}
+
 
 
 
@@ -54,20 +47,22 @@ color: tomato;
 
 
 
-.img-menu, .text , .dark-mode{
+.img-menu, .text , #bdark{
     margin: 0 1em;
-    border-style: none;
+    padding:0.4em 1em; 
     background-color: aquamarine;
-    color:white;
-    
-    
+    border-style: none;
+     
 }
-.img-menu:hover , .text:hover , .dark-mode:hover{
-    cursor: pointer;
+
+.img-menu:hover , .text:hover , #bdark:hover{
+    margin: 0 1em;
     background-color:rgba(52, 52, 117); 
+    color:white;
     border-style: 1px solid rgb(11, 11, 36);
     border-radius: 0.4em; 
-    padding:0.4em 1em; 
+    cursor: pointer;
+
     
  
 }
@@ -98,8 +93,6 @@ color: tomato;
 
     
     
-
-
 
 .meme{
     display: flex;
@@ -187,3 +180,26 @@ color: tomato;
     display: flex;
 }
 
+/*------ Cambio de color para modo oscuro------------- */
+
+ body.darkmode{
+     background-color: rgb(48, 52, 63);
+     color:white;
+ }
+ 
+header.darkmode{
+    background-color: rgb(25, 30, 43);
+    color: white;
+}
+
+aside.darkmode{
+    background-color: rgb(37, 41, 53);
+    color: white;
+}
+
+
+/*
+.img-menu, .text , #bdark{
+    background-color: rgb(25, 30, 43);
+    color: white;
+}*/
