@@ -8,7 +8,7 @@
 
 .container{
     display: flex;
-    color: black;
+   /* color: black;*/
   
 
 }
@@ -33,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 .header_title {
@@ -50,14 +51,14 @@
 .img-menu, .text , #bdark{
     margin: 0 1em;
     padding:0.4em 1em; 
-    background-color: aquamarine;
+    background-color:aquamarine;
     border-style: none;
      
 }
 
 .img-menu:hover , .text:hover , #bdark:hover{
     margin: 0 1em;
-    background-color:rgba(52, 52, 117); 
+    background-color:rgba(104, 109, 109, 0.6); 
     color:white;
     border-style: 1px solid rgb(11, 11, 36);
     border-radius: 0.4em; 
@@ -68,27 +69,42 @@
 }
 
 .box {
-    background-color: blueviolet;
+    
+    background-color: black;
     width: 500px;
-    height: 500px;
+    height: 400px;
     margin: 0 auto;
-    margin-top: 1.5em;
-    
-    
-    
-    
+    background-size:cover;
+      
 }
-.top_text , .bottom_text{
-    text-align: center;
+
+    
+
+.top_text {
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     padding:1em;
     background-color: white;
     color:rgb(14, 14, 36); 
+    width:500px; 
+    margin:0 auto;
+    margin-top: 1.5em;
+    
+
     
 }
 
 .bottom_text{
-    margin-top: 23em;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding:1em;
+    background-color: white;
+    color:rgb(14, 14, 36); 
+    width:500px; 
+    margin:0 auto;
+    
 }
 
     
@@ -130,6 +146,7 @@
     background-color: burlywood;
 }
 
+
 /* -- Imagen -- */
 
 .imagen, .texto {
@@ -148,9 +165,14 @@
 .imagen h4 {
     margin: 10px 0;
 }
-#url{
+#img-input{
     width: 100%;
-    padding:0.4em 0;
+    padding:0.2em 0;
+    border-style:none; 
+    border-radius: 3px;
+    color:black;
+    background-color: rgb(247, 245, 245);
+      
 }
 
 .filtros {
@@ -196,7 +218,20 @@ aside.darkmode{
     background-color: rgb(37, 41, 53);
     color: white;
 }
-
+.img-menu, .text , #bdark{
+/*background-color: rgb(25, 30, 43);*/
+color:white;
+}
+#img-input{
+    background-color: rgb(68, 69, 71);
+    color: white;
+    border: none;
+}
+#color , #effect, #restablecer{
+    background-color:rgb(68, 69, 71) ;
+    color:white;
+    border: none;
+}
 
 /*-----------------Aside cambio de panel entre texto e imagen-------------*/
 
