@@ -77,6 +77,10 @@
     background-size:cover;
       
 }
+img#image{
+    width: 100%;
+    height:100%;
+}
 
     
 

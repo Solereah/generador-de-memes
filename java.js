@@ -64,5 +64,29 @@ document.querySelector('panel').addEventListener("click", e =>{
     
     });
 
+//funciones para el texto
 
+const $=(id)=> document.getElementById(id)
+
+const actualizarTextos=()=>{
+$('top-text-parrafo').textContent=$('top-text').value
+$('bottom-text-parrafo').textContent=$('bottom-text').value
+}
+
+const actualizarFuente=()=>{
+   const fuente = $('font-family').value
+    $('top-text-parrafo').style.fontFamily= fuente
+    $('bottom-text-parrafo').style.fontFamily= fuente
+}
+
+const incializarTexto=()=>{
+$('top-text').addEventListener('input',actualizarTextos)
+$('bottom-text').addEventListener('input',actualizarTextos)
+$('font-family').addEventListener('change',actualizarFuente)
+}
+
+const incializar=()=>{
+    incializarTexto()
+}
+window.onload=incializar
 
