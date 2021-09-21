@@ -34,7 +34,7 @@ btnImage.addEventListener('click', () =>{
  
 })
 
-btnText.addEventListener('click', ()=>{
+btnText.addEventListener('click', () =>{
 if(panelImage.style.display ='block'){
     panelImage.style.display ='none'
     panelText.style.display = 'block'
@@ -81,7 +81,19 @@ const incializar=()=>{
 }
 window.onload=incializar
 
-//Alinear texto
+//Alinear texto 
 
+/* ----------------No funciona todavia----------------------
+const btnAlinearLeft = document.getElementById('aling_left')
+const btnAlinearRight = document.getElementById('aling-right')
+const btnAlinearCenter = document.getElementById('aling-center')
+
+btnAlinearLeft.addEventListener('click', ()=>{
+    
+    document.getElementById('top-text').style.textAlign = 'left'
+    document.getElementById('bottom-text').style.textAlign = 'left'
+
+
+})*/
 
 
