@@ -27,7 +27,7 @@ let panelImage = document.getElementById('panel-img')
 let panelText = document.getElementById('panel-text')
 
 btnImage.addEventListener('click', () =>{
-  // panelImage.classList.toggle('oculto')
+
   if(panelImage.style.display ='block'){
       panelText.style.display ='none'
   }
@@ -80,4 +80,8 @@ const incializar=()=>{
     incializarTexto()
 }
 window.onload=incializar
+
+//Alinear texto
+
+const alinearTexto = 
 
