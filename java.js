@@ -18,40 +18,31 @@ bdark.addEventListener('click', e =>{
 
 
 })
+
 //Cambio de Aside de imagen y Aside del texto
 
-/*const botonImagen = document.getElementById('btn-img')
+let btnImage = document.getElementById('btn-img')
+let btnText = document.getElementById('btn-text')
+let panelImage = document.getElementById('panel-img')
+let panelText = document.getElementById('panel-text')
 
-botonImagen.addEventListener('click', e =>{
-    const panelImagen = document.querySelector('panel-img')
-    panelImagen.classList.toggle('oculto')
-})*/
-
-
-
-
-
-//let asidePanel = document.querySelector('panel')
-
-/*let ocultarPanel = document.querySelector('panel')
-
-ocultarPanel.addEventListener('click', e =>{
-    ocultarPanel.classList.toggle('oculto')
-}
-)*/
-
-/* 
-document.querySelector('panel').addEventListener("click", e =>{
-    let asideImagen = document.querySelector('panel-img')
-    let asideTexto = document.querySelector('panel-text')
-    
-    asideImagen.classList.toggle('oculto')
-    asideTexto.classList.toggle('oculto')
-
-
-
+btnImage.addEventListener('click', () =>{
+  // panelImage.classList.toggle('oculto')
+  if(panelImage.style.display ='block'){
+      panelText.style.display ='none'
+  }
+ 
 })
-*/
+
+btnText.addEventListener('click', ()=>{
+if(panelImage.style.display ='block'){
+    panelImage.style.display ='none'
+    panelText.style.display = 'block'
+}
+   
+})
+
+
 //funciones para la imagen 
 
 // Agregar imagen
