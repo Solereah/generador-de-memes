@@ -83,5 +83,5 @@ window.onload=incializar
 
 //Alinear texto
 
-const alinearTexto = 
+
 
