@@ -55,7 +55,7 @@ if(panelImage.style.display ='block'){
     
     });
 
-//funciones para el texto
+    
 
 const $=(id)=> document.getElementById(id)
 
