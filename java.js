@@ -81,6 +81,23 @@ const incializar=()=>{
 }
 window.onload=incializar
 
+// Funciones para el modo de mezcla de fondo de imagen
+/* -------------------Todavia no funciona ---------------
+document.getElementById('color').addEventListener('input', e =>{
+    const inputColor = document.getElementById('color')
+    inputColor.style.backgroundColor = e.target.value;
+
+})
+
+
+const backBlendMode = (event) =>{
+    let efectoFondo = $('effect').value
+    efectoFondo.style.backgroundBlendMode = event.target.value
+}
+
+*/
+
+
 //Alinear texto 
 
 /* ----------------No funciona todavia----------------------
