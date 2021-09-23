@@ -46,14 +46,27 @@ if(panelImage.style.display ='block'){
 //funciones para la imagen 
 
 // Agregar imagen
-    document.getElementById('img-input').addEventListener('input',e =>{
-    let imageInput=document.getElementById('img-input');
-    let image= document.getElementById('image');
-    
-    
-    image.src=imageInput.value;
+
+let imageInput=document.getElementById('img-input');
+let imagenCargada= document.getElementById('image');
+
+document.getElementById('img-input').addEventListener('input',e =>{
+    imagenCargada.src=imageInput.value;
     
     });
+ 
+
+//descargar imagen BTN funciona pero no logro descargue la imagen
+
+const btn_descarga = document.getElementById('btn_descarga_img')
+let boxImage = document.getElementById('box')
+  
+ 
+btn_descarga.onclick = () =>{ 
+    domtoimage.toBlob(boxImage).then((blob) => {
+        window.saveAs(blob, "imagen_descargada_personalizada.jpg");
+    });
+}
 
 //funciones para el texto
 
@@ -101,9 +114,9 @@ const backBlendMode = (event) =>{
 //Alinear texto 
 
 /* ----------------No funciona todavia----------------------
-const btnAlinearLeft = document.getElementById('aling_left')
-const btnAlinearRight = document.getElementById('aling-right')
-const btnAlinearCenter = document.getElementById('aling-center')
+const btnLeft = document.getElementById('aling_left')
+const btnRight = document.getElementById('aling_right')
+const btnCenter = document.getElementById('aling-center')
 
 btnAlinearLeft.addEventListener('click', ()=>{
     
@@ -112,5 +125,3 @@ btnAlinearLeft.addEventListener('click', ()=>{
 
 
 })*/
-
-
