@@ -6,8 +6,9 @@
 }
 
 
-.container{
+body{
     display: flex;
+    background-color: rgb(238, 238, 238);
    /* color: black;*/
   
 
@@ -27,7 +28,7 @@
 }
 
 .header {
-    background-color: aquamarine;
+    background-color: rgb(210, 206, 206);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -51,7 +52,7 @@
 .img-menu, .text , #bdark{
     margin: 0 1em;
     padding:0.4em 1em; 
-    background-color:aquamarine;
+    background-color:rgb(224, 224, 224);
     border-style: none;
      
 }
@@ -148,7 +149,7 @@ img#image{
 .aside {
     width: 250px;
     height: 100vh;
-    background-color: burlywood;
+    background-color: rgb(250, 250, 250);
 }
 
 
@@ -219,13 +220,13 @@ header.darkmode{
     color: white;
 }
 
+
 aside.darkmode{
     background-color: rgb(37, 41, 53);
     color: white;
 }
 
 .img-menu, .text , #bdark{
-    /*background-color: rgb(25, 30, 43);*/
     color:white;
     }
 /*-------------Fin del cambio a modo oscuro---------------*/

@@ -2,12 +2,21 @@
 
 //Cambio de modo claro a oscuro
 
+/*
+//MODO OSCURO - MODO CLARO
+
+const lightmode = document.querySelector('#lightmode');
+const body = document.querySelector('body');
+lightmode.addEventListener('click', e => {
+    body.classList.toggle('lightmode');
+})*/
+
+
 const bdark = document.querySelector('#bdark')
 const darkBody = document.querySelector('body')
 const darkHeader = document.querySelector('header')
 const darkAside = document.querySelector('aside')
 const darkUrl = document.querySelector('#url')
-
 
 //Solucionar problemas con los buttons del header porque no cambian de color en modo oscuro
 bdark.addEventListener('click', e =>{
@@ -15,7 +24,6 @@ bdark.addEventListener('click', e =>{
     darkHeader.classList.toggle('darkmode')
     darkAside.classList.toggle('darkmode')
    
-
 
 })
 
