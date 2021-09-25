@@ -72,7 +72,7 @@ let boxImage = document.getElementById('box')
  
 btn_descarga.onclick = () =>{ 
     domtoimage.toBlob(boxImage).then((blob) => {
-        window.saveAs(blob, "imagen_descargada_personalizada.jpg");
+        window.saveAs(blob, 'imagen_descargada_personalizada.jpg');
     });
 }
 
