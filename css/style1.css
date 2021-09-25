@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+body{
+    display: flex;
+    background-color: rgb(238, 238, 238);
+   /* color: black;*/
+  
+
+}
+/*funcion para claro oscuro
+
+
+
+
+
+
+
+/* -- CABECERA -- */
+
+.main {
+    width: 100vw;
+}
+
+.header {
+    background-color: rgb(210, 206, 206);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.header_title {
+    font-size: 2.5em; 
+}
+
+.header_menu {
+    display: flex;
+    padding: 1em;
+    
+}
+
+
+
+.img-menu, .text , #bdark{
+    margin: 0 1em;
+    padding:0.4em 1em; 
+    background-color:rgb(210, 206, 206);
+    color:rgb(96, 94, 95);
+    border-style: none;
+     
+}
+
+.img-menu:hover , .text:hover , #bdark:hover{
+    margin: 0 1em;
+    background-color:rgba(104, 109, 109, 0.6); 
+    border-style: 1px solid rgb(11, 11, 36);
+    border-radius: 0.4em; 
+    cursor: pointer;
+
+    
+ 
+}
+
+.box{
+    
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    background-size:cover;
+      
+}
+
+img#image{
+    width: 100%;
+    height:100%;
+}
+
+    
+
+.top_text {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding:1em;
+    background-color: white;
+    color:rgb(14, 14, 36); 
+    width:500px; 
+    margin:0 auto;
+    margin-top: 1.5em;
+    
+
+    
+}
+
+.bottom_text{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding:1em;
+    background-color: white;
+    color:rgb(14, 14, 36); 
+    width:500px; 
+    margin:0 auto;
+    
+}
+
+    
+    
+
+.meme{
+    display: flex;
+    justify-content: center;
+    
+}
+.btnmeme{
+    padding:1em;
+    margin-top: 2em;
+    align-items:center;
+    width: 15%;
+    font-size: 1em;
+    color:white;
+    background-color: rgb(10, 10, 44);
+    border:none;
+    border-radius: 0.3em;
+
+
+}    
+
+
+.btnmeme:hover{
+    cursor: pointer;
+    background-color: rgba(52, 52, 117, 0.7)
+    
+
+
+}
+
+/* --------------- ASIDE ---------------------------------------- */
+
+.aside{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+
+/* -- Imagen -- */
+
+.imagen, .texto {
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+.imagen h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+.imagen h4 {
+    margin: 10px 0;
+}
+
+#img-input{
+    width: 100%;
+    padding:0.2em 0;
+    border-style:none; 
+    border-radius: 3px;
+    color:black;
+    background-color: rgb(189, 189, 189);
+      
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+}
+
+#color , #effect{
+    padding:0.3em 0.8em;
+}
+
+#restablecer{
+    margin-top: 1em;
+    padding: 0.8em;
+}
+
+
+
+
+/* -- Texto -- */
+
+.texto {
+    display: none;
+}
+
+.txt-check {
+    display: flex;
+}
+
+/*------ Cambio de color para modo oscuro------------- */
+
+ body.darkmode{
+     background-color: rgb(48, 52, 63);
+     color:white;
+ }
+ 
+header.darkmode{
+    background-color: rgb(25, 30, 43);
+    color: white;
+}
+
+
+aside.darkmode{
+    background-color: rgb(37, 41, 53);
+    color: white;
+}
+
+
+/*-------------Fin del cambio a modo oscuro---------------*/
+#img-input{
+    background-color: rgb(68, 69, 71);
+    color: white;
+    border: none;
+}
+#color , #effect, #restablecer{
+    background-color:rgb(68, 69, 71) ;
+    color:white;
+    border: none;
+}
+
+/*-----------------Aside cambio de panel entre texto e imagen-------------*/
+.oculto{
+    display: none;
+}
+
+
+
+

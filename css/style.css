@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body.darkmode {
+    --bgcontainercolor:#30343F;
+    --bgcolor-panel:#252935;
+    --bgcolor-header:#191E2B;
+    --bgcolor-input:#393E49;
+    --fontcolor:#fff;
+    --hovercolor:#6c6f77;
+}
+
+body.lightmode {
+    --bgcontainercolor:#EEEEEE;
+    --bgcolor-panel:#FAFAFA;
+    --bgcolor-header:#E0E0E0;
+    --bgcolor-input: #E0E0E0;
+    --fontcolor:#424242;
+    --hovercolor: #BDBDBD;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,160 +26,160 @@
     list-style-type: none;
 }
 
-
-body{
-    display: flex;
-    background-color: rgb(238, 238, 238);
-   /* color: black;*/
-  
-
+body {
+    font-family: 'Open Sans', sans-serif;
 }
-/*funcion para claro oscuro
 
-
-
-
-
-
+.container {
+    display: flex;
+}
 
 /* -- CABECERA -- */
 
 .main {
     width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    background-color: rgb(210, 206, 206);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
+    background-color: var(--bgcolor-header);
+    flex-basis: auto;
 }
 
 .header_title {
-    font-size: 2.5em; 
+    color:var(--fontcolor);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 0.3em;
 }
 
 .header_menu {
     display: flex;
+    justify-content: center;
     padding: 1em;
-    
+    color: var(--fontcolor);
+    font-size: 12px;
 }
 
-
-
-.img-menu, .text , #bdark{
-    margin: 0 1em;
-    padding:0.4em 1em; 
-    background-color:rgb(210, 206, 206);
-    color:rgb(96, 94, 95);
-    border-style: none;
-     
-}
-
-.img-menu:hover , .text:hover , #bdark:hover{
-    margin: 0 1em;
-    background-color:rgba(104, 109, 109, 0.6); 
-    border-style: 1px solid rgb(11, 11, 36);
-    border-radius: 0.4em; 
+.header_menu li {
+    padding: 0.5em;
     cursor: pointer;
-
-    
- 
 }
 
-.box{
-    
-    background-color: black;
-    width: 500px;
-    height: 400px;
-    margin: 0 auto;
-    background-size:cover;
-      
+.header_menu li:hover {
+    background-color: var(--hovercolor);
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
-img#image{
-    width: 100%;
-    height:100%;
-}
+/* --------------- MEME ---------------------------------------- */
 
-    
-
-.top_text {
+.box-container {
+    background-color: var(--bgcontainercolor);
+    flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.top-text, .bottom-text {
+    text-align: center;
     text-transform: uppercase;
-    padding:1em;
-    background-color: white;
-    color:rgb(14, 14, 36); 
-    width:500px; 
-    margin:0 auto;
-    margin-top: 1.5em;
-    
-
-    
+    background-color: #fff;
+    padding: 0.5em;
+    font-size: 5vw;
 }
 
-.bottom_text{
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    padding:1em;
-    background-color: white;
-    color:rgb(14, 14, 36); 
-    width:500px; 
-    margin:0 auto;
-    
+.image {
+    height: 250px;
 }
 
-    
-    
-
-.meme{
-    display: flex;
-    justify-content: center;
-    
+.box {
+    background-color: cornflowerblue;
+    width: 90%;
 }
-.btnmeme{
-    padding:1em;
+
+.download {
+    color: #fff;
+    font-size: 12px;
     margin-top: 2em;
-    align-items:center;
-    width: 15%;
-    font-size: 1em;
-    color:white;
-    background-color: rgb(10, 10, 44);
-    border:none;
-    border-radius: 0.3em;
-
-
-}    
-
-
-.btnmeme:hover{
+    background-color: #2e7d32;
+    padding: 0.9em 0.5em;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(52, 52, 117, 0.7)
-    
+}
 
-
+.download:hover{
+    background-color: #235525;
+    transition: 0.3s;
 }
 
 /* --------------- ASIDE ---------------------------------------- */
 
-.aside{
-    width: 250px;
+.aside {
+    width: 230px;
     height: 100vh;
-    background-color: rgb(250, 250, 250);
+    background-color: var(--bgcolor-panel);
+    color: var(--fontcolor);
 }
-
 
 /* -- Imagen -- */
 
-.imagen, .texto {
-    padding: 0.5em;
+.color {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.color-img  {
+    background-color: var(--bgcolor-input);
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.color input[type="color"]{
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+}
+
+.color input[type="color"]::-webkit-color-swatch{
+    border: none;
+    border-radius: 100%;
+}
+
+.color select{
+	display: inline-block;
+    height: 31.3px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: var(--bgcolor-input);
+    color: var(--fontcolor);
+    font-size: 10px;
+    border: transparent;
+    border-radius: 5px;
+    position: relative;
+    /* transition: all 0.25s ease; */
+}
+
+.imagen {
+    display: block;
+}
+
+.imagen {
+    padding: 0.9em;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
@@ -172,79 +193,292 @@ img#image{
     margin: 10px 0;
 }
 
-#img-input{
-    width: 100%;
-    padding:0.2em 0;
-    border-style:none; 
-    border-radius: 3px;
-    color:black;
-    background-color: rgb(189, 189, 189);
-      
-}
-
 .filtros {
     display: flex;
     flex-direction: column;
 }
 
-#color , #effect{
-    padding:0.3em 0.8em;
+.filtros label {
+    padding: 0.7em 0;
 }
 
-#restablecer{
-    margin-top: 1em;
-    padding: 0.8em;
+.filtros input[type=range] {
+    width: 100%;
+    background-color: var(--bgcolor-input); /* ver este color*/
+    border-radius: 10px;
+    appearance: none;
+    height: 5px;
+  }
+  
+  .filtros input[type=range]::-webkit-slider-thumb {
+    cursor: pointer;
+    width: 13px;
+    -webkit-appearance: none;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--fontcolor);
+    
+  }
+
+
+.imagen input[type="text"]{
+    background-color: var(--bgcolor-input);
+    border: transparent;
+    border-radius: 5px;
+    padding: 0.3em;
+    color: var(--fontcolor);
+    font-size: 12px;
+    width: 100%;
 }
 
+.imagen input[type="text"]:focus {
+    background-color: none;
+  }
 
 
+.filtros input[type="reset"] {
+    background-color: var(--bgcolor-input);
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+    padding: 0.5em 0.3em;
+    font-size: 12px;
+    color: var(--fontcolor);
+    width: fit-content;
+    margin-top: 1.7em;
+}
+
+.filtros input[type="reset"]:hover,.imagen input[type="text"]:hover, select:hover, .color-img:hover  {
+    background-color: var(--hovercolor);
+    transition: 0.1s;
+}
 
 /* -- Texto -- */
 
 .texto {
     display: none;
+    padding: 0.9em;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 
 .txt-check {
     display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 9px;
+    margin-top: 1em;
 }
 
-/*------ Cambio de color para modo oscuro------------- */
+.txt-check p {
+    margin-left: 0.3em;
+}
 
- body.darkmode{
-     background-color: rgb(48, 52, 63);
-     color:white;
- }
- 
-header.darkmode{
-    background-color: rgb(25, 30, 43);
-    color: white;
+.txt-check input {
+    height: 10px;
+  width: 10px;
+  margin-left: 3px;
+}
+
+.texto textarea {
+    display: flex;
+    max-width: 155.08px;
+    min-width: 155.08px;
+    height: 21.19px;
+    padding: 0.3em 0 0 0.3em;
+    background: var(--bgcolor-input);
+    color: var(--fontcolor);
+    font-size: 12px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.texto textarea:hover {
+    background-color: var(--hovercolor);
+    transition: 0.1s;
+}
+
+.texto h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+.texto h4 {
+    margin: 10px 0;
 }
 
 
-aside.darkmode{
-    background-color: rgb(37, 41, 53);
-    color: white;
+
+.texto select {
+    height: 2.5em;
+    width: 100%;
+    background: var(--bgcolor-input);
+    color: var(--fontcolor);
+    font-size: 12px;
+    border: transparent;
+    border-radius: 5px;
 }
 
+.texto select:focus{
+    outline: none;
+}
 
-/*-------------Fin del cambio a modo oscuro---------------*/
-#img-input{
-    background-color: rgb(68, 69, 71);
-    color: white;
+.texto textarea:focus{
+  outline: none;
+}
+
+.texto input:focus{
+    outline: none;
+}
+
+.size {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.size input[type="number"], .espaciado input[type="number"] {
+  width: 95%;
+  height: 30px;
+  background: var(--bgcolor-input);
+  border-radius: 5px;
+  border: transparent;
+  color: #fff;
+  padding-left: 0.3em;
+}
+
+.espaciado input[type="number"] {
+    width: 100%;
+}
+
+.size_left, .size_center, .size_right {
+    width: 38px;
+    height: 30px;
+    font-size: 12px;
+    padding: 0.5em;
+    text-align: center;
+    background: var(--bgcolor-input);
+    margin: 0.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.size_left:hover, .size_center:hover, .size_right:hover, .size input[type="number"]:hover, .contorno_:hover, .texto select:hover, .color-txt:hover,.color-bg:hover, .espaciado input[type="number"]:hover {
+    background-color: var(--hovercolor);
+    transition: 0.1s;
+}
+
+.color {
+    width: 100%;
+}
+
+.color-text {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.color-text_{
+    display: flex;
+    flex-direction: column;
+}
+
+.color-txt, .color-bg {
+    background-color: var(--bgcolor-input);
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.color-txt p, .color-bg p{
+ padding-right: 2px;
+}
+
+.color-text input[type="color"]{
+    -webkit-appearance: none;
+    background-color: transparent;
     border: none;
+    width: 32px;
+    height: 32px;
 }
-#color , #effect, #restablecer{
-    background-color:rgb(68, 69, 71) ;
-    color:white;
+
+.color-text input[type="color"]::-webkit-color-swatch{
     border: none;
-}
-
-/*-----------------Aside cambio de panel entre texto e imagen-------------*/
-.oculto{
-    display: none;
+    border-radius: 100%;
 }
 
 
+.contorno {
+    display: flex;
+    justify-content: space-around;
+}
 
+.contorno_ {
+    text-align: center;
+    background: var(--bgcolor-input);
+    padding: 0.7em;
+    margin: 0.2em;
+    border-radius: 5px;
+    text-transform: capitalize;
+    width: 33%;
+    cursor: pointer;
+}
 
+/* MEDIA QUERIES  */
+
+@media (max-width: 769px) {
+    .aside {
+        display: none;
+    }
+}
+
+@media (min-width: 425px) {
+    .box{
+        width: 80%; 
+    }
+
+    .image {
+        height: 250px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .top-text, .bottom-text {
+        font-size: 2vw;
+    }
+    .box{
+        width: 40%; 
+    }
+    .image {
+        height: 320px;
+    }
+
+}
+/*
+@media (min-width: 1024px) {
+    .image{
+        height: 390px;
+    }
+
+    .box{
+        width: 50%; 
+    }
+}
+*/
+@media (min-width: 2560px) {
+    .image{
+        height: 500px;
+    }
+
+    .box{
+        width: 30%; 
+    }
+
+    .top-text, .bottom-text {
+        font-size: 2vw;
+    }
+}

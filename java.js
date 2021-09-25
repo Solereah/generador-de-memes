@@ -55,8 +55,9 @@ if(panelImage.style.display ='block'){
 
 // Agregar imagen
 
-let imageInput=document.getElementById('img-input');
-let imagenCargada= document.getElementById('image');
+let imageInput =document.getElementById('img-input');
+let imagenCargada = document.getElementById('image');
+let imgdescarga =document.querySelector.toString('.img-descarg')
 
 document.getElementById('img-input').addEventListener('input',e =>{
     imagenCargada.src=imageInput.value;
@@ -71,12 +72,13 @@ let boxImage = document.getElementById('box')
   
  
 btn_descarga.onclick = () =>{ 
-    domtoimage.toBlob(boxImage).then((blob) => {
-        window.saveAs(blob, 'imagen_descargada_personalizada.jpg');
+    domtoimage.toBlob('imagenDescarga').then((blob) => {
+        window.saveAs(blob, "imagen_descargada_personalizada.jpg");
     });
 }
 
-    
+
+//funciones para el texto
 
 const $=(id)=> document.getElementById(id)
 
