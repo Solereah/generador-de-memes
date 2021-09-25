@@ -38,7 +38,7 @@ body{
 }
 
 .header_title {
-    font-size: 2.5em;
+    font-size: 2.5em; 
 }
 
 .header_menu {
@@ -52,7 +52,8 @@ body{
 .img-menu, .text , #bdark{
     margin: 0 1em;
     padding:0.4em 1em; 
-    background-color:rgb(224, 224, 224);
+    background-color:rgb(210, 206, 206);
+    color:rgb(96, 94, 95);
     border-style: none;
      
 }
@@ -60,7 +61,6 @@ body{
 .img-menu:hover , .text:hover , #bdark:hover{
     margin: 0 1em;
     background-color:rgba(104, 109, 109, 0.6); 
-    color:white;
     border-style: 1px solid rgb(11, 11, 36);
     border-radius: 0.4em; 
     cursor: pointer;
@@ -146,7 +146,7 @@ img#image{
 
 /* --------------- ASIDE ---------------------------------------- */
 
-.aside {
+.aside{
     width: 250px;
     height: 100vh;
     background-color: rgb(250, 250, 250);
@@ -171,13 +171,14 @@ img#image{
 .imagen h4 {
     margin: 10px 0;
 }
+
 #img-input{
     width: 100%;
     padding:0.2em 0;
     border-style:none; 
     border-radius: 3px;
     color:black;
-    background-color: rgb(247, 245, 245);
+    background-color: rgb(189, 189, 189);
       
 }
 
@@ -226,9 +227,7 @@ aside.darkmode{
     color: white;
 }
 
-.img-menu, .text , #bdark{
-    color:white;
-    }
+
 /*-------------Fin del cambio a modo oscuro---------------*/
 #img-input{
     background-color: rgb(68, 69, 71);
