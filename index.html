@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de memes</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.2.0/dom-to-image.min.js" integrity="sha512-0IolcghONRd8gUdpmhs7/hXQ4Pn35ZHL4N/oRiTGUCi699FsWFn7Zs3JrBRErkLgoGz7g6gIQ6StQP2rdbxjHg==" crossorigin="anonymous"></script>
@@ -21,8 +21,8 @@
                 <div class="header_title">Generador de memes</div>
                 <ul class="header_menu">
 
-                    <li><i class="fas fa-file-image"></i> Imagen</li>
-                    <li><i class="fas fa-font"></i> Texto</li>
+                    <li id="btn-img"><i class="fas fa-file-image"></i> Imagen</li>
+                    <li id="btn-text"><i class="fas fa-font"></i> Texto</li>
                     <li id="lightmode" class="show2"><i class="fas fa-lightbulb"></i> Modo claro</li>
                  <!--  <li id="mode" class="show"><i class="far fa-lightbulb"></i> Modo Oscuro</li> --> 
                 </ul>
@@ -31,21 +31,21 @@
             <!-- VISOR MEME -->
             <div class="box-container">
                 <div class="box" id="box">
-                    <div class="top-text">top text</div>
-                    <div class="image"><img src="" alt="imagen meme"></div>
-                    <div class="bottom-text">bottom text</div>
+                    <div class="top-text" id="top-text-parrafo"><p>top text</p></div>
+                    <div class="image"><img src="" alt="imagen meme" id="imagen-meme"></div>
+                    <div class="bottom-text" id="bottom-text-parrafo"><p>bottom text</p></div>
                 </div>
-                <div class="download"><i class="fas fa-download"></i> Descargar meme</div>
+                <div class="download" id="btn_descarga_img"><i class="fas fa-download"></i> Descargar meme</div>
             </div>
         </main>
 
         <!-- ASIDE -->
         <aside id="aside" class="aside">
 
-            <div class="imagen">
+            <div class="imagen" id="panel-img">
                 <h3>Imagen</h3>
                 <h4>url</h4>
-                <input type="text" name="url" id="url">
+                <input type="text" name="url" id="image-input">
                 <form>
                     <h4>Color</h4>
                     <div class="color">
@@ -91,16 +91,16 @@
 
 
 
-                <div class="texto">
+                <div class="texto" id="panel-text">
                     <h3>texto</h3>
                     <h4>superior</h4>
-                    <textarea name="top-text" id="top-text" cols="30" >TOP TEXT</textarea>
+                    <textarea name="top-text" id="top-textarea" cols="30" >TOP TEXT</textarea>
                     <div class="txt-check">
                         <input type="checkbox" name="top" id="top">
                         <p>Sin texto superior</p>
                     </div>
                     <h4>Inferior</h4>
-                    <textarea name="bottom-text" id="bottom-text" cols="30" >BOTTOM TEXT</textarea>
+                    <textarea name="bottom-text" id="bottom-textarea" cols="30" >BOTTOM TEXT</textarea>
                     <div class="txt-check">
                         <input type="checkbox" name="bot" id="bot">
                         <p>Sin texto inferior</p>
