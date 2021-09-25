@@ -12,7 +12,7 @@
 
 </head>
 <body class="darkmode">
-    <div id="fondo" class="container darkmode">
+
         
         <!-- CABECERA -->        
         <main class="main">
@@ -21,14 +21,14 @@
                     <div class="header_menu">
                         
                         <button class="img-menu" id="btn-img">
-                            <i class="far fa-file-image" class="imagen_menu dark_btn"></i>Imagen
+                            <i class="far fa-file-image" class="imagen_menu dark_btn"></i> Imagen
                         </button>
                         
                         <button class="text" id="btn-text">
-                            <i class="fas fa-font" class="texto_menu dark_btn"></i>Texto
+                            <i class="fas fa-font" class="texto_menu dark_btn"></i> Texto
                         </button>
                         <button  id= "bdark">
-                            <i class="fas fa-lightbulb" class="modo_oscuro_menu  dark_btn"></i>Modo Oscuro</li>
+                            <i class="fas fa-lightbulb" class="modo_oscuro_menu  dark_btn"></i> Modo Oscuro</li>
                         </button>
                     </div>      
             </header>
@@ -41,7 +41,7 @@
     
             <div class="box" id="box">
                 
-          <img src ="" id="image" alt ="">
+            <img src ="" id="image" alt ="">
               
                      
             </div>
@@ -67,7 +67,7 @@
                 
                 <h4>Fondo</h4>
                 <div class="color">
-                    <input type="submit" value="#ff0000" name="color" id="color">
+                    <input type="color" value="#ffffff" name="color" id="color">
                     <select name="effect" id="effect" aria-label="Modo de mezcla de fondo de imagen">
                         <option value="unset">Ninguno</option>
                         <option value="lighten">Aclarar</option>
@@ -79,11 +79,10 @@
                 </div>
                 <h4>Filtros</h4>
                 <form class="filtros">
-                    
                     <label for="brillo">brillo</label>
-                    <input type="range" name="brillo" id="brillo" min="0" max="100" value="0">
+                    <input type="range" name="brillo" id="brillo" min="0" max="100" value="100">
                     <label for="opacidad">opacidad</label>
-                    <input type="range" name="opacidad" id="opacidad" min="0" max="100" value="0">
+                    <input type="range" name="opacidad" id="opacidad" min="0" max="100" value="100">
                     <label for="contraste">contraste</label>
                     <input type="range" name="contraste" id="contraste" min="0" max="100" value="0" >
                     <label for="desenfoque">desenfoque</label>
@@ -164,7 +163,7 @@
                     
             </section>
         </aside>   
-    </div>
+
     <script src="java.js"></script>
     
 </body>
