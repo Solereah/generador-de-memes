@@ -13,9 +13,9 @@ lightmode.addEventListener('click',e => {
     } else {
       textoClaroOscuro.innerHTML = "Modo Claro";
     
-    }   
+    }   */
     
-})*/
+})
 
 
 
