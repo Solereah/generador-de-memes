@@ -2,9 +2,27 @@
 
 const lightmode = document.querySelector('#lightmode');
 const body = document.querySelector('body');
-lightmode.addEventListener('click', e => {
-    body.classList.toggle('lightmode');
-})
+const textoClaroOscuro = document.getElementById('text-b-w')
+
+lightmode.addEventListener('click',e => {
+  body.classList.toggle('lightmode');
+/* no funciona el cambio de texto todavia
+    if(textoClaroOscuro.innerHTML === "Modo claro"){
+      textoClaroOscuro.innerHTML = "Modo ocuro";
+     
+    } else {
+      textoClaroOscuro.innerHTML = "Modo Claro";
+    
+    }   
+    
+})*/
+
+
+
+
+  
+
+
 
 //Cambio de Aside de imagen y Aside del texto
 
@@ -48,35 +66,25 @@ btnImgCargada.onclick = () => {
     });
 };
 
+//funcion para el blend entre color y los filtros del fondo de la imagen
+const blendFondo=()=>{
 
+  //const colorBlend = document.getElementById('blend-mode-effect')
+    $('blend-mode-effect').style.backgroundBlendMode = evento.target.value
+
+  
+  }
+
+ 
 /*
-// agregar imagen 
+ agregar imagen 
 const imageInput = document.getElementById('image-input')
 const imagenCargada = document.getElementById('imagen-meme')
-//const imgDescarga = document.querySelector.toString('')
+const imgDescarga = document.querySelector.toString('')
 document.getElementById('image-input').addEventListener('input',e=>{
     imagenCargada.src = imageInput.value;
 
 });*/
-
-//descargar imagen BTN funciona pero no logro descargue la imagen
-
-//const btnDescarga = document.getElementById('btn_descarga_img')
-//const boxImage = document.getElementById('box')
-
- 
-/*btnDescarga.onclick = () => { 
-    domtoimage.toBlob(boxImage).then((blob) => {
-        window.saveAs(blob, 'imagen_descargada_personalizada.jpg');
-    });
-};*/
-/*const descargarMeme = () => {
-    domtoimage.toBlob($('box')).then(function (blob) {
-        saveAs(blob, 'imagen_descargada_personalizada.jpg');
-    });
-
-}*/
-
 
 
 //funciones para el texto
@@ -136,8 +144,10 @@ $('font-family').addEventListener('change',actualizarFuente)
 
 const incializar=()=>{
     incializarTexto()
+   
     //$('btn_descarga_img').addEventListener('click', descargarMeme)
     
     
 }
 window.onload=incializar
+
