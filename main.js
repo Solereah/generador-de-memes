@@ -29,8 +29,27 @@ if(panelImage.style.display ='block'){
    
 })
 
-//funciones de imagen
+//funciones de carga de imagen
 
+const imagenCargada = document.getElementById("imagen-meme")
+const btnImgCargada = document.getElementById("btn_descarga_img")
+const urlInput = document.getElementById("image-input")
+const meme = document.getElementById('box')
+
+urlInput.oninput = () => {
+  imagenCargada.style.backgroundImage = `url("${urlInput.value}")`
+}
+
+//Funcion descarga del meme
+
+btnImgCargada.onclick = () => {
+    domtoimage.toBlob(meme).then((blob) => {
+        window.saveAs(blob, "meme_descarga.jpg");
+    });
+};
+
+
+/*
 // agregar imagen 
 const imageInput = document.getElementById('image-input')
 const imagenCargada = document.getElementById('imagen-meme')
@@ -38,7 +57,7 @@ const imagenCargada = document.getElementById('imagen-meme')
 document.getElementById('image-input').addEventListener('input',e=>{
     imagenCargada.src = imageInput.value;
 
-});
+});*/
 
 //descargar imagen BTN funciona pero no logro descargue la imagen
 
