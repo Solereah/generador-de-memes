@@ -2,21 +2,13 @@
 
 const lightmode = document.querySelector('#lightmode');
 const body = document.querySelector('body');
-const textoClaroOscuro = document.getElementById('text-b-w')
+//const textoClaroOscuro = document.querySelector('span')
 
 lightmode.addEventListener('click',e => {
   body.classList.toggle('lightmode');
-/* no funciona el cambio de texto todavia
-    if(textoClaroOscuro.innerHTML === "Modo claro"){
-      textoClaroOscuro.innerHTML = "Modo ocuro";
-     
-    } else {
-      textoClaroOscuro.innerHTML = "Modo Claro";
-    
-    }   */
-    
-})
+  textoClaroOscuro.textContent = 'Modo ocuro'
 
+})
 
 
 
