@@ -116,6 +116,7 @@ body {
     background-color: #2e7d32;
     padding: 0.9em 0.5em;
     border-radius: 5px;
+    border: transparent;
     cursor: pointer;
 }
 
@@ -425,12 +426,14 @@ body {
 .contorno_ {
     text-align: center;
     background: var(--bgcolor-input);
-    padding: 0.7em;
-    margin: 0.2em;
+    padding: 0.5em;
+    /* margin: 0.2em; */
     border-radius: 5px;
     text-transform: capitalize;
-    width: 33%;
+    /* width: 33%; */
     cursor: pointer;
+    border: transparent;
+    color: var(--fontcolor);
 }
 
 /* MEDIA QUERIES  */
