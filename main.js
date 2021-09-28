@@ -61,8 +61,8 @@ btnImgCargada.onclick = () => {
 //funcion para el blend entre color y los filtros del fondo de la imagen
 const blendFondo=()=>{
 
-  //const colorBlend = document.getElementById('blend-mode-effect')
-    $('blend-mode-effect').style.backgroundBlendMode = evento.target.value
+   // este es el id de la etiqueta select $('blend-mode-effect').style.backgroundBlendMode = evento.target.value
+   //id del div donde se carga la imagen $('imagen-meme').style.backgroundBlendMode = evento.target.value
 
   
   }
