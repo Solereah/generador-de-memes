@@ -81,6 +81,15 @@ document.getElementById('image-input').addEventListener('input',e=>{
 
 });*/
 
+// Filtros para la imagen no funcionan todavia
+/* 
+let escalaGrises = document.getElementById('grises').value
+
+escalaGrises.addEventListener('input',e=>{
+  imagenCargada.style.filter = "greyscale("+ escalaGrises * 10 +"%)"
+})
+*/
+
 
 //funciones para el texto
 
