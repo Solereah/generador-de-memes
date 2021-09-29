@@ -1,19 +1,20 @@
+'use strict'
+
 //MODO OSCURO - MODO CLARO
 
 const lightmode = document.querySelector('#lightmode');
 const body = document.querySelector('body');
-//const textoClaroOscuro = document.querySelector('span')
 
-lightmode.addEventListener('click',e => {
+lightmode.onclick =()=> {
   body.classList.toggle('lightmode');
-  textoClaroOscuro.textContent = 'Modo ocuro'
 
-})
-
-
-
-  
-
+  let textoClaroOscuro = document.querySelector(".text-claro-oscuro");
+  if (textoClaroOscuro.textContent === "Modo Claro"){
+      textoClaroOscuro.textContent = "Modo Oscuro"
+  } else {
+    textoClaroOscuro.textContent = "Modo Claro"
+  }
+}
 
 
 //Cambio de Aside de imagen y Aside del texto
@@ -44,7 +45,7 @@ if(panelImage.style.display ='block'){
 const imagenCargada = document.getElementById("imagen-meme")
 const btnImgCargada = document.getElementById("btn_descarga_img")
 const urlInput = document.getElementById("image-input")
-const meme = document.getElementById('box')
+const meme = document.getElementById("box")
 
 urlInput.oninput = () => {
   imagenCargada.style.backgroundImage = `url("${urlInput.value}")`
@@ -53,10 +54,12 @@ urlInput.oninput = () => {
 //Funcion descarga del meme
 
 btnImgCargada.onclick = () => {
-    domtoimage.toBlob(meme).then((blob) => {
+    domtoimage.toBlob(meme).then((blob) =>{
         window.saveAs(blob, "meme_descarga.jpg");
     });
+    
 };
+console.log(btnImgCargada)
 
 //funcion para el blend entre color y los filtros del fondo de la imagen
 const blendFondo=()=>{
@@ -136,10 +139,7 @@ $('font-family').addEventListener('change',actualizarFuente)
 
 const incializar=()=>{
     incializarTexto()
-   
-    //$('btn_descarga_img').addEventListener('click', descargarMeme)
-    
-    
+      
 }
 window.onload=incializar
 
