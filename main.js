@@ -114,16 +114,10 @@ $('top-text-parrafo').textContent=$('top-textarea').value
 $('bottom-text-parrafo').textContent=$('bottom-textarea').value
 }
 
-//const actualizarContorno = () =>{
-//    const contFuente = $(contorno)
-//    $('top-text-parrafo').style.textShadow = '5px 5px 1px #000'
-//    $('bottom-text-parrafo').style.textShadow ='5px 5px 1px #000'
 
-
-//}
 
 const actualizarContorno = (contorno) => {
- // const grosor = '2px'
+ 
 
   if (contorno === 'ninguno') {
     $('top-text-parrafo').style.textShadow = 'none'
@@ -147,7 +141,7 @@ const incializarTexto=()=>{
 $('top-textarea').addEventListener('input',actualizarTextos)
 $('bottom-textarea').addEventListener('input',actualizarTextos)
 $('font-family').addEventListener('change',actualizarFuente)
-//$('contorno_oscuro').addEventListener('click',actualizarContorno('oscuro'))
+
  $('contorno_ninguno').addEventListener('click', () => {
     actualizarContorno('ninguno')
   })
@@ -158,6 +152,21 @@ $('font-family').addEventListener('change',actualizarFuente)
  $('contorno_oscuro').addEventListener('click', () => {
     actualizarContorno('oscuro')
   })
+  $('size_left').addEventListener('click', () => {
+    alinearTextos('left')
+  })
+
+  $('size_center').addEventListener('click', () => {
+    alinearTextos('center')
+  })
+ $('size_right').addEventListener('click', () => {
+    alinearTextos('right')
+  })
+}
+
+const alinearTextos = (alineacion) => {
+  $('top-text-parrafo').style.textAlign = alineacion
+  $('bottom-text-parrafo').style.textAlign = alineacion
 }
 
 const incializar=()=>{
