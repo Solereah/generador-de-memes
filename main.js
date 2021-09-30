@@ -169,6 +169,29 @@ const alinearTextos = (alineacion) => {
   $('bottom-text-parrafo').style.textAlign = alineacion
 }
 
+  const checkboxSup = document.getElementById('top')
+  const box_text_sup = document.getElementById('top-text-parrafo')
+  const checkboxInf = document.getElementById('bot')
+  const box_text_inf = document.getElementById('bottom-text-parrafo')
+  const checkboxSup_Inf = document.getElementById('bot_transp')
+  
+
+  checkboxSup.addEventListener('change', function(){
+    box_text_sup.classList.toggle('ocultar-sup')
+
+  });
+  checkboxInf.addEventListener('change', function(){
+    box_text_inf.classList.toggle('ocultar-inf') 
+  });
+  checkboxSup_Inf.addEventListener('change', function(){
+    box_text_inf.classList.toggle('transparente')
+    box_text_sup.classList.toggle('transparente')
+    
+  });
+
+
+
+
 const incializar=()=>{
     incializarTexto()
       

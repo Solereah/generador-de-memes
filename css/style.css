@@ -89,9 +89,18 @@ body {
 .top-text, .bottom-text {
     text-align: center;
     text-transform: uppercase;
-    background-color: #fff;
+    background-color:#fff;
     padding: 0.5em;
     font-size: 5vw;
+}
+.ocultar-sup {
+    display: none;
+}
+.ocultar-inf{
+    display: none;
+}
+.transparente{
+    background-color: transparent;
 }
 
 #imagen-meme {
