@@ -59,16 +59,30 @@ btnImgCargada.onclick = () => {
     });
     
 };
-console.log(btnImgCargada)
+
 
 //funcion para el blend entre color y los filtros del fondo de la imagen
-const blendFondo=()=>{
+ 
+/*
+const blendMode= document.getElementById('blend-mode-effect').value;
+ 
+const modoBlend =(event)=> {
+ 
+  blendMode.style.backgroundBlendMode = event.target.value
+}
+blendMode.addEventListener("change", modoBlend());
+
+
+
+ 
+})*/
+
 
    // este es el id de la etiqueta select $('blend-mode-effect').style.backgroundBlendMode = evento.target.value
    //id del div donde se carga la imagen $('imagen-meme').style.backgroundBlendMode = evento.target.value
 
   
-  }
+
 
  
 /*

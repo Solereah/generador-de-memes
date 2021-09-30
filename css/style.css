@@ -99,8 +99,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-position: cover; 
-    filter: opacity(100%) contrast(0%) brightness(100%) grayscale(100%) invert(0%) saturate(100%) blur(0%)
-    sepia(0%) hue-rotate(0%);
+   /* filter: opacity(100%) contrast(0%) brightness(100%) grayscale(100%) invert(0%) saturate(100%) blur(0%)
+    sepia(0%) hue-rotate(0%);*/
 
 
     /*height: 250px;*/
