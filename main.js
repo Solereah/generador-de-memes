@@ -118,13 +118,13 @@ escalaGrises.addEventListener('input',e=>{
 //funciones para el texto
 
 const $=(id)=> document.getElementById(id)
-
+//ingreso de texto
 const actualizarTextos=()=>{
 $('top-text-parrafo').textContent=$('top-textarea').value
 $('bottom-text-parrafo').textContent=$('bottom-textarea').value
 }
 
-
+//contorno texto 
 const actualizarContorno = (contorno) => {
  
 
@@ -139,18 +139,19 @@ const actualizarContorno = (contorno) => {
     $('bottom-text-parrafo').style.textShadow = `1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000`
   }
 }
-
+//Fuente
 const actualizarFuente=()=>{
    const fuente = $('font-family').value
     $('top-text-parrafo').style.fontFamily= fuente
     $('bottom-text-parrafo').style.fontFamily= fuente
 }
-
+//inciliazar funciones
 const incializarTexto=()=>{
 $('top-textarea').addEventListener('input',actualizarTextos)
 $('bottom-textarea').addEventListener('input',actualizarTextos)
 $('font-family').addEventListener('change',actualizarFuente)
-
+$('size_txt').addEventListener('input',cambiarTamanioTexto)
+//funciones contorno
  $('contorno_ninguno').addEventListener('click', () => {
     actualizarContorno('ninguno')
   })
@@ -161,6 +162,7 @@ $('font-family').addEventListener('change',actualizarFuente)
  $('contorno_oscuro').addEventListener('click', () => {
     actualizarContorno('oscuro')
   })
+  //alienear texto
   $('size_left').addEventListener('click', () => {
     alinearTextos('left')
   })
@@ -172,11 +174,19 @@ $('font-family').addEventListener('change',actualizarFuente)
     alinearTextos('right')
   })
 }
+//cambiar tamanio de texto
+const cambiarTamanioTexto = () => {
+  const tamanio = $('size_txt').value 
+  $('top-text-parrafo').style.fontSize = ` ${tamanio}px`
+  $('bottom-text-parrafo').style.fontSize = ` ${tamanio}px`
 
+}
+//alinear texto
 const alinearTextos = (alineacion) => {
   $('top-text-parrafo').style.textAlign = alineacion
   $('bottom-text-parrafo').style.textAlign = alineacion
 }
+//checks superior inferior y transparencia 
 
   const checkboxSup = document.getElementById('top')
   const box_text_sup = document.getElementById('top-text-parrafo')
