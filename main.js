@@ -145,12 +145,25 @@ const actualizarFuente=()=>{
     $('top-text-parrafo').style.fontFamily= fuente
     $('bottom-text-parrafo').style.fontFamily= fuente
 }
+const cambiarColorTexto =()=>{
+  const fuenteColor =$('color-txt').value
+  $('top-text-parrafo').style.color= fuenteColor
+  $('bottom-text-parrafo').style.color= fuenteColor
+}
+const cambiarColorFondo =()=>{
+  const fondoColor =$('color-bg').value
+  $('top-text-parrafo').style.backgroundColor= fondoColor
+  $('bottom-text-parrafo').style.backgroundColor= fondoColor
+}
 //inciliazar funciones
 const incializarTexto=()=>{
 $('top-textarea').addEventListener('input',actualizarTextos)
 $('bottom-textarea').addEventListener('input',actualizarTextos)
 $('font-family').addEventListener('change',actualizarFuente)
 $('size_txt').addEventListener('input',cambiarTamanioTexto)
+$('color-txt').addEventListener('change',cambiarColorTexto)
+$('color-bg').addEventListener('change',cambiarColorFondo)
+
 //funciones contorno
  $('contorno_ninguno').addEventListener('click', () => {
     actualizarContorno('ninguno')

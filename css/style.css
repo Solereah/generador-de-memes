@@ -106,8 +106,8 @@ body {
 #imagen-meme {
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-position: cover; 
+    background-position:center;
+    background-position:center;
     background-blend-mode: screen;
    /* filter: opacity(100%) contrast(0%) brightness(100%) grayscale(100%) invert(0%) saturate(100%) blur(0%)
     sepia(0%) hue-rotate(0%);*/
