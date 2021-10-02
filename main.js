@@ -61,21 +61,31 @@ btnImgCargada.onclick = () => {
 };
 
 
+
 //funcion para el blend entre color y los filtros del fondo de la imagen
- 
-/*
-const blendMode= document.getElementById('blend-mode-effect').value;
- 
-const modoBlend =(event)=> {
- 
-  blendMode.style.backgroundBlendMode = event.target.value
+
+document.getElementById('blend-mode-effect').onchange = (event) =>{
+
+imagenCargada.style.backgroundBlendMode = event.target.value
 }
-blendMode.addEventListener("change", modoBlend());
+
+/*
+const modoBlend =(event) => {
+  imagenCargada.style.backgroundBlendMode = 
+  document.getElementById('blend-mode-effect').selectedOptions[0].innerHTML;
+}
+
+
+const textoModoBlend = (event) => {
+    $('texto-color').innerText = event.target.value.upperCase()
+    imagenCargada.style.backgroundColor = event.target.value
+}
 
 
 
- 
-})*/
+*/
+
+
 
 
    // este es el id de la etiqueta select $('blend-mode-effect').style.backgroundBlendMode = evento.target.value
@@ -113,7 +123,6 @@ const actualizarTextos=()=>{
 $('top-text-parrafo').textContent=$('top-textarea').value
 $('bottom-text-parrafo').textContent=$('bottom-textarea').value
 }
-
 
 
 const actualizarContorno = (contorno) => {
