@@ -64,7 +64,7 @@ btnImgCargada.onclick = () => {
 
 
 //funcion para el blend entre color y los filtros del fondo de la imagen
-const modoBlend = document.getElementById('blend-mode-effect').value
+//const modoBlend = document.getElementById('blend-mode-effect').value
 
 //document.getElementById('blend-mode-effect').onchange = (event) =>{
 
@@ -100,15 +100,7 @@ const textoModoBlend = (event) => {
 
 
  
-/*
- agregar imagen 
-const imageInput = document.getElementById('image-input')
-const imagenCargada = document.getElementById('imagen-meme')
-const imgDescarga = document.querySelector.toString('')
-document.getElementById('image-input').addEventListener('input',e=>{
-    imagenCargada.src = imageInput.value;
 
-});*/
 
 // Filtros para la imagen no funcionan todavia
 
@@ -178,8 +170,16 @@ $('color-bg').addEventListener('change',cambiarColorFondo)
 }
 //incilizar imagen
 
-const incializarImagen=()=>{
+const incializarImagen=() =>{
   $('brillo').addEventListener('change', actualizarFiltros)
+  $('opacidad').addEventListener('change', actualizarFiltros)
+  $('contraste').addEventListener('change', actualizarFiltros)
+  $('desenfoque').addEventListener('change', actualizarFiltros)
+  $('grises').addEventListener('change', actualizarFiltros)
+  $('sepia').addEventListener('change', actualizarFiltros)
+  $('hue').addEventListener('change', actualizarFiltros)
+  $('saturado').addEventListener('change', actualizarFiltros)
+  $('negativo').addEventListener('change', actualizarFiltros)
 }
 //funciones contorno
  $('contorno_ninguno').addEventListener('click', () => {
