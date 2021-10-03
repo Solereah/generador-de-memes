@@ -86,26 +86,33 @@ body {
     align-items: center;
 }
 
-.top-text, .bottom-text {
+#top-text-parrafo, #bottom-text-parrafo {
     /*height: 2.3em;*/
     text-align: center;
     text-transform: uppercase;
     background-color:#fff;
     padding: 0.5em;
-    font-size: 5vw;
+    font-size: 2.5rem;
+
    
 }
 
-.ocultar-sup {
-    background-color: transparent;
-    color: transparent;
+#top-text-parrafo{
+    top: 0;
 }
-.ocultar-inf{
-    background-color: transparent;
-    color: transparent;
+p.ocultar-sup{
+    display: none;
 }
-.transparente{
-    background-color: transparent;
+p.ocultar-inf{
+    display: none;
+}
+
+
+/* no funciona el background color*/
+
+p.fondo-transparente{
+    background-color:rgba(255,255,255,0);
+    color: #2e7d32;
 }
 
 #imagen-meme {
@@ -116,19 +123,9 @@ body {
     position: relative;
     max-width: 610px;
     height: 380px;
-    border:1px solid red;
-  
-   
-   
-
-
-    
+    border:3px solid red;    
 }
-elemento.style{
-    background-color: cornflowerblue;
-    background-blend-mode: difference;
-}
-/*agregue alto falta ver algo mas para que el top text no se mueva en el display none*/
+
 
 .box {
     background-color: cornflowerblue;

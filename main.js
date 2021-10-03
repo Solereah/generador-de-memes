@@ -230,8 +230,8 @@ const alinearTextos = (alineacion) => {
     box_text_inf.classList.toggle('ocultar-inf') 
   });
   checkboxSup_Inf.addEventListener('change', function(){
-    box_text_inf.classList.toggle('transparente')
-    box_text_sup.classList.toggle('transparente')
+    box_text_inf.classList.toggle('fondo-transparente')
+    box_text_sup.classList.toggle('fondo-transparente')
     
   });
 
