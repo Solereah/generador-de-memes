@@ -43,13 +43,13 @@ if(panelImage.style.display ='block'){
 
 //funciones de carga de imagen
 
-const imagenCargada = document.getElementById("imagen-meme")
-const btnImgCargada = document.getElementById("btn_descarga_img")
-const urlInput = document.getElementById("image-input")
-const meme = document.getElementById("box")
+const imagenCargada = document.getElementById('imagen-meme')
+const btnImgCargada = document.getElementById('btn_descarga_img')
+const urlInput = document.getElementById('image-input')
+const meme = document.getElementById('box')
 
 urlInput.oninput = () => {
-  imagenCargada.style.backgroundImage = `url("${urlInput.value}")`
+  imagenCargada.style.backgroundImage = `url('${urlInput.value}')`
 }
 
 //Funcion descarga del meme
@@ -111,16 +111,19 @@ document.getElementById('image-input').addEventListener('input',e=>{
 });*/
 
 // Filtros para la imagen no funcionan todavia
-/* 
-let escalaGrises = document.getElementById('grises').value
 
-escalaGrises.addEventListener('input',e=>{
-  imagenCargada.style.filter = "greyscale("+ escalaGrises * 10 +"%)"
-})
-*/
 const actualizarFiltros =()=>{
   const brightness = $('brillo').value
-  $('imagen-meme').style.filter = `brillo(${brightness})` 
+  const opacity = $('opacidad').value
+  const contrast = $('contraste').value
+  const blur = $('desenfoque').value
+  const greyscale = $('grises').value
+  const sepia = $('sepia').value
+  const hue = $('hue').value
+  const saturate = $('saturado').value
+  const invert = $('negativo').value
+
+  $('imagen-meme').style.filter = `brillo(${brightness}) opacidad(${opacity}) contraste(${contrast}) desenfoque(${blur}) grises(${greyscale}) sepia(${sepia}) hue(${hue}) saturado(${saturate}) negativo(${invert})` 
 }
 
 //funciones para el texto
