@@ -1,4 +1,5 @@
 'use strict'
+const $=(id)=> document.getElementById(id)
 
 //MODO OSCURO - MODO CLARO
 
@@ -117,11 +118,14 @@ escalaGrises.addEventListener('input',e=>{
   imagenCargada.style.filter = "greyscale("+ escalaGrises * 10 +"%)"
 })
 */
-
+const actualizarFiltros =()=>{
+  const brightness = $('brillo').value
+  $('imagen-meme').style.filter = `brillo(${brightness})` 
+}
 
 //funciones para el texto
 
-const $=(id)=> document.getElementById(id)
+
 //ingreso de texto
 const actualizarTextos=()=>{
 $('top-text-parrafo').textContent=$('top-textarea').value
@@ -168,6 +172,12 @@ $('size_txt').addEventListener('input',cambiarTamanioTexto)
 $('color-txt').addEventListener('change',cambiarColorTexto)
 $('color-bg').addEventListener('change',cambiarColorFondo)
 
+}
+//incilizar imagen
+
+const incializarImagen=()=>{
+  $('brillo').addEventListener('change', actualizarFiltros)
+}
 //funciones contorno
  $('contorno_ninguno').addEventListener('click', () => {
     actualizarContorno('ninguno')
@@ -190,7 +200,7 @@ $('color-bg').addEventListener('change',cambiarColorFondo)
  $('size_right').addEventListener('click', () => {
     alinearTextos('right')
   })
-}
+
 //cambiar tamanio de texto
 const cambiarTamanioTexto = () => {
   const tamanio = $('size_txt').value 
@@ -230,6 +240,7 @@ const alinearTextos = (alineacion) => {
 
 const incializar=()=>{
     incializarTexto()
+    incializarImagen()
       
 }
 window.onload=incializar
