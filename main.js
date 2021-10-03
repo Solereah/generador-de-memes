@@ -63,11 +63,15 @@ btnImgCargada.onclick = () => {
 
 
 //funcion para el blend entre color y los filtros del fondo de la imagen
+const modoBlend = document.getElementById('blend-mode-effect').value
 
-document.getElementById('blend-mode-effect').onchange = (event) =>{
+//document.getElementById('blend-mode-effect').onchange = (event) =>{
 
-imagenCargada.style.backgroundBlendMode = event.target.value
-}
+//imagenCargada.style.backgroundBlendMode = event.target.value
+//}
+
+
+
 
 /*
 const modoBlend =(event) => {
