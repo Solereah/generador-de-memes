@@ -74,25 +74,6 @@ btnImgCargada.onclick = () => {
 
 
 
-/*
-const modoBlend =(event) => {
-  imagenCargada.style.backgroundBlendMode = 
-  document.getElementById('blend-mode-effect').selectedOptions[0].innerHTML;
-}
-
-
-const textoModoBlend = (event) => {
-    $('texto-color').innerText = event.target.value.upperCase()
-    imagenCargada.style.backgroundColor = event.target.value
-}
-
-
-
-*/
-
-
-
-
    // este es el id de la etiqueta select $('blend-mode-effect').style.backgroundBlendMode = evento.target.value
    //id del div donde se carga la imagen $('imagen-meme').style.backgroundBlendMode = evento.target.value
 
@@ -232,12 +213,13 @@ const alinearTextos = (alineacion) => {
   checkboxInf.addEventListener('change', function(){
     box_text_inf.classList.toggle('ocultar-inf') 
   });
+
   checkboxSup_Inf.addEventListener('change', function(){
     box_text_inf.classList.toggle('fondo-transparente')
     box_text_sup.classList.toggle('fondo-transparente')
-    
-  });
 
+   
+  });
 
 
 
@@ -248,3 +230,5 @@ const incializar=()=>{
 }
 window.onload=incializar
 
+
+  

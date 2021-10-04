@@ -78,7 +78,7 @@ body {
 /* --------------- MEME ---------------------------------------- */
 
 .box-container {
-    background-color: var(--bgcontainercolor);
+   background-color: var(--bgcontainercolor);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -110,8 +110,8 @@ p.ocultar-inf{
 /* no funciona el background color*/
 
 p.fondo-transparente{
-    background-color:transparent;
-    
+ 
+   background-color: transparent !important;
 }
 
 #imagen-meme {
@@ -123,6 +123,7 @@ p.fondo-transparente{
     width: 100%;   
     flex-grow: 1;
     background-size: cover;
+
 }
 
 
