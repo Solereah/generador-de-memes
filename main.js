@@ -9,7 +9,7 @@ const body = document.querySelector('body');
 lightmode.onclick =()=> {
   body.classList.toggle('lightmode');
 
-  let textoClaroOscuro = document.querySelector(".text-claro-oscuro");
+  const textoClaroOscuro = document.querySelector(".text-claro-oscuro");
   if (textoClaroOscuro.textContent === "Modo Claro"){
       textoClaroOscuro.textContent = "Modo Oscuro"
   } else {
@@ -20,10 +20,11 @@ lightmode.onclick =()=> {
 
 //Cambio de Aside de imagen y Aside del texto
 
-let btnImage = document.getElementById('btn-img')
-let btnText = document.getElementById('btn-text')
-let panelImage = document.getElementById('panel-img')
-let panelText = document.getElementById('panel-text')
+const btnImage = document.getElementById('btn-img')
+const btnText = document.getElementById('btn-text')
+const panelImage = document.getElementById('panel-img')
+const panelText = document.getElementById('panel-text')
+const colorBlend = document.getElementById('color')
 
 btnImage.addEventListener('click', () =>{
 
@@ -66,26 +67,20 @@ btnImgCargada.onclick = () => {
 //funcion para el blend entre color y los filtros del fondo de la imagen
 //const modoBlend = document.getElementById('blend-mode-effect').value
 
-//document.getElementById('blend-mode-effect').onchange = (event) =>{
+document.getElementById('blend-mode-effect').onchange = (event) =>{
 
-//imagenCargada.style.backgroundBlendMode = event.target.value
-//}
+  imagenCargada.style.backgroundBlendMode = event.target.value;
+  imagenCargada.style.backgroundColor = colorBlend.value
+};
 
-
-
-
-   // este es el id de la etiqueta select $('blend-mode-effect').style.backgroundBlendMode = evento.target.value
-   //id del div donde se carga la imagen $('imagen-meme').style.backgroundBlendMode = evento.target.value
-
-  
-
-
- 
+colorBlend.onchange = (event) =>{
+  imagenCargada.style.backgroundColor = colorBlend.value
+}
 
 
 // Filtros para la imagen no funcionan todavia
 
-const actualizarFiltros =()=>{
+  const actualizarFiltros =()=>{
   const brightness = $('brillo').value
   const opacity = $('opacidad').value
   const contrast = $('contraste').value
